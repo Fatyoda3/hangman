@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Ubuntu+Mono&display=swap");
+
+/* Reset some default margin/padding */
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+/* Fonts - add fallback fonts */
+body {
+	font-family: "Roboto", Arial, sans-serif;
+	background-color: rgb(114, 187, 5);
+}
+
+/* Heading Styles */
+.head {
+	background-clip: text;
+	text-align: center;
+	font-family: "Rubik Doodle Triangles";
+
+	font-size: 2vw;
+}
+
+/* Main Container */
+.main {
+	max-width: 400px; /* Set a maximum width to allow for responsiveness */
+	margin: 0 auto; /* Center the container */
+	border: 3px solid rgb(145, 186, 73);
+	border-radius: 18px;
+	background-color: rgb(164, 230, 64);
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/* Alphabet Buttons */
+.buttonsAlphabet {
+	flex: 0 0 calc(10% - 12px); /* Adjust button width to fit 10 buttons in a row */
+	/* The 12px accounts for margins and padding */
+	border: none;
+	background-color: yellowgreen;
+	padding: 8px 16px;
+	margin: 6px;
+	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
+	color: rgb(255, 253, 253);
+	font-weight: bolder;
+	font-size: larger;
+	min-width: 50px;
+}
+
+.buttonsAlphabet:hover {
+	background-color: rgb(41, 90, 26);
+	cursor: pointer;
+	box-shadow: 3px 3px 10px black;
+}
+
+/* Div Containing Individual Letters */
+.divOfLetters {
+	min-width: 25px;
+	height: 25px;
+
+	/* border: 3px solid red; */
+	border-bottom: 3px solid black;
+
+	margin: 2px; /* Adjust spacing between letter divs */
+}
+
+/* Word Box */
+.wordBox {
+	margin-bottom: 2vh;
+
+	padding: 10px;
+	text-align: center;
+	min-width: 100px;
+	/* border: 10px solid orange; */
+	border: none;
+	border-radius: 36px;
+	box-shadow: 4px 4px 7px black;
+	margin-top: 20px; /* Add space between word box and buttons */
+}
+
+.foot {
+	display: flex;
+	justify-content: center;
+}
+.foot button {
+	background-color: green;
+	border: none;
+	padding: 12px;
+	margin: 12px;
+	transition: box-shadow, transform 0.3s ease-in-out;
+	border-radius: 36px;
+	color: white;
+	margin-top: 50px;
+}
+.foot button:hover {
+	transform: scaleY(1.1);
+	box-shadow: 3px 4px 8px rgb(27, 11, 11);
+  cursor:pointer;
+}
+
+.RoW {
+	min-width: 100px;
+
+	border: none;
+	border-radius: 36px;
+	text-align: center;
+	box-shadow: 5px 4px 8px rgb(42, 38, 38);
+
+	padding: 25px;
+}
+
+#LCounter {
+	background-color: rgb(185, 47, 9);
+
+	padding: 0 20px 0 20px;
+
+	font-weight: bolder;
+
+	margin: 20px;
+
+	font-size: 24px;
+
+	color: wheat;
+}
