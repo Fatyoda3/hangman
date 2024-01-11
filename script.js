@@ -27,8 +27,7 @@ for (let i = 0; i < Alphabets.length; i++) {
 
 	buttons[i].addEventListener("click", () => {
 		if (lives == 0) {
-			RightOrWrong.innerText = `game over\n
-			you killed a man  `;
+			RightOrWrong.innerText = `game over you killed a man  `;
 
 			ButtonsDiv.style.transition = "opacity 2s ease-in";
 
@@ -42,6 +41,7 @@ for (let i = 0; i < Alphabets.length; i++) {
 				ButtonsDiv.style.display = "none";
 			}, 4000);
 		}
+
 		if (secretWord.includes(buttons[i].innerText)) {
 			buttons[i].style.backgroundColor = "#ff80ff";
 
