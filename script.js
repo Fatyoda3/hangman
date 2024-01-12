@@ -26,7 +26,7 @@ for (let i = 0; i < Alphabets.length; i++) {
 	ButtonsDiv.append(buttons[i]);
 
 	buttons[i].addEventListener("click", () => {
-		if (lives == 0) {
+		if (lives < 0) {
 			RightOrWrong.innerText = `game over you killed a man  `;
 
 			ButtonsDiv.style.transition = "opacity 2s ease-in";
@@ -247,7 +247,7 @@ let Hangman = [];
 for (let i = 0; i <= 6; i++) {
 	Hangman.push(`resources/image${i}.png`);
 }
-console.log(Hangman);
+// console.log(Hangman);
 image.src = Hangman[0];
 var imgNum = 0;
 function changeGraphics() {
