@@ -35,7 +35,7 @@ body {
 	justify-content: center;
 }
 /* Alphabet Buttons */
-.buttonsAlphabet {
+.btnAlpha {
 	flex: 0 0 calc(10% - 12px); /* Adjust button width to fit 10 buttons in a row */
 	/* The 12px accounts for margins and padding */
 	border: none;
@@ -50,7 +50,7 @@ body {
 	min-width: 50px;
 }
 
-.buttonsAlphabet:hover {
+.btnAlpha:hover {
 	background-color: rgb(41, 90, 26);
 	cursor: pointer;
 	box-shadow: 3px 3px 10px black;
